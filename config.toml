@@ -18,13 +18,12 @@ disqusShortname = "Mert Çetin"
   description = "Mert's personal website"
   keywords = "blog,developer,personal"
   avatarurl = "images/avatar.jpg"
-  imageWidht = 200
   #gravatar = "mrtctns22@gmail.com"
 
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+  favicon_32 = "images/avatar.jpg"
+  favicon_16 = "images/avatar.jpg"
 
-  since = 2019
+  since = 2021
 
   enableTwemoji = true
 
