@@ -63,7 +63,7 @@ disqusShortname = "Mert Çetin"
   url = "https://medium.com/@mrtctns"
 [[params.social]]
   name = "Mail"
-  icon = "fa-regular fa-envelope fa-2x"
+  icon = "fa-envelope fa-regular"
   weight = 3
   url = "mailto:mrtctns22@gmail.com"
 
