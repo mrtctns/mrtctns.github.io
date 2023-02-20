@@ -18,6 +18,7 @@ disqusShortname = "Mert Çetin"
   description = "Mert's personal website"
   keywords = "blog,developer,personal"
   avatarurl = "images/avatar.jpg"
+  avatarwidht = 200
   #gravatar = "mrtctns22@gmail.com"
 
   favicon_32 = "/img/favicon-32x32.png"
