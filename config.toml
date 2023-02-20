@@ -43,24 +43,29 @@ disqusShortname = "Mert Çetin"
 # Social links
 [[params.social]]
   name = "Github"
-  icon = "fa fa-github fa-3x"
-  weight = 1
+  icon = "fa fa-github fa-2x"
+  weight = 2
   url = "https://github.com/mrtctns"
 [[params.social]]
   name = "Linkedin"
-  icon = "fa fa-linkedin fa-3x"
+  icon = "fa fa-linkedin fa-2x"
   weight = 2
   url = "https://www.linkedin.com/in/mrtctns/"
 [[params.social]]
   name = "Twitter"
-  icon = "fa fa-twitter fa-3x"
-  weight = 3
-  url = ""
+  icon = "fa fa-twitter fa-2x"
+  weight = 2
+  url = "https://twitter.com/mertt_cetinn"
 [[params.social]]
   name = "Twitter"
   icon = "fa fa-medium fa-2x"
-  weight = 3
+  weight = 2
   url = "https://medium.com/@mrtctns"
+[[params.social]]
+  name = "Mail"
+  icon = "fa fa-mail fa-2x"
+  weight = 2
+  url = "mailto:mrtctns22@gmail.com"
 
 
 # Menu links
