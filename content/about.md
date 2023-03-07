@@ -7,4 +7,4 @@ author = "Mert Çetin"
 +++
 
 Hey, I'm Mert Çetin. I'm a computer engineer working as an iOS developer at Neon Apps.
-<a href="MertCetin_Resume.pdf/" target="_blank"> Resume</a>
+<a href="images/MertCetin_Resume.pdf" target="_blank"> Resume</a>
