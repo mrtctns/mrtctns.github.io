@@ -301,5 +301,8 @@ body.colorscheme-dark .float-container a {
     @media only screen and (prefers-color-scheme: dark) and (max-width: 768px) {
       body.colorscheme-auto .float-container a:hover, body.colorscheme-auto .float-container a:focus {
         color: #dadada; } }
+.swift-image {
+  float: right;
+}
 
 /*# sourceMappingURL=coder-dark.css.map */

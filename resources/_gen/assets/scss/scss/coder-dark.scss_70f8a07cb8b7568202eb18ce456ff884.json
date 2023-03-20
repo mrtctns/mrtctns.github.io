@@ -1,1 +1,4 @@
 {"Target":"css/coder-dark.css","MediaType":"text/css","Data":{}}
+.swift-image {
+  float: right;
+}
