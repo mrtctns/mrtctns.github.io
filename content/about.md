@@ -15,5 +15,4 @@ I'm also interested in music; I'm drummer, producer and DJ's. I really like drin
 
 [Show Resume]({{< ref "/resume" >}})
 
-<iframe src="https://www.linkedin.com/profile/view?id=mrtctns" height="240" width="200" frameborder="0"></iframe>
 
