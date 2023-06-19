@@ -3683,8 +3683,5 @@ figure {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-.swift-image {
-  float: right;
-}
 
 /*# sourceMappingURL=coder.css.map */

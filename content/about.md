@@ -15,4 +15,5 @@ I'm also interested in music; I'm drummer, producer and DJ's. I really like drin
 
 [Show Resume]({{< ref "/resume" >}})
 
+{{< linkedin >}}
 

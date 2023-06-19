@@ -6,6 +6,8 @@ languagecode = "en"
 relativeURLs = true
 canonifyURLs = true
 defaultcontentlanguage = "en"
+[markup.goldmark.renderer]
+unsafe = true
 
 paginate = 20
 
