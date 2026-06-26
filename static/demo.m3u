@@ -1,0 +1,11 @@
+#EXTM3U
+#EXTINF:-1 group-title="Plora Demo",Apple BipBop (HLS)
+https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8
+#EXTINF:-1 group-title="Plora Demo",Big Buck Bunny
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+#EXTINF:-1 group-title="Plora Demo",Sintel
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4
+#EXTINF:-1 group-title="Plora Demo",Tears of Steel
+https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4
+#EXTINF:-1 group-title="Plora Demo",Mux Test Stream (HLS)
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
