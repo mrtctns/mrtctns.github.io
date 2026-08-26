@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Mert Çetin</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/avatar.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+<style>
+  .oops { min-height: 100svh; display: grid; place-content: center; text-align: center; gap: 1.25rem; }
+  .oops h1 { font-size: clamp(4rem, 18vw, 9rem); }
+</style>
+</head>
+<body>
+<div class="aurora" aria-hidden="true">
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+  <span class="grain"></span>
+</div>
+
+<main class="wrap narrow oops">
+  <h1 class="hero" style="min-height:auto;padding:0;display:block">404</h1>
+  <p class="lede" style="margin-inline:auto">
+    <span lang="tr">Aradığınız sayfa bulunamadı.</span>
+    <span lang="en">The page you are looking for could not be found.</span>
+  </p>
+  <p><a class="btn primary" href="/">
+    <span lang="tr">Ana sayfaya dön</span><span lang="en">Back home</span>
+  </a></p>
+</main>
+
+<script>
+  (function () {
+    var l = 'tr';
+    try { l = localStorage.getItem('mc-lang') || l; } catch (e) {}
+    if (l !== 'tr' && l !== 'en') l = 'tr';
+    document.documentElement.dataset.lang = l;
+    document.documentElement.lang = l;
+  })();
+</script>
+</body>
+</html>
