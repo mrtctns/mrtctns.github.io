@@ -1,0 +1,19 @@
+annexa-obf-derivative-2026-10-10.csv.gz
+
+Derived from the Open Beauty Facts database (dump of 2026-10-10).
+Source: https://world.openbeautyfacts.org/data
+
+Database: Open Database License (ODbL) 1.0
+  https://opendatacommons.org/licenses/odbl/1-0/
+Contents of individual records: Database Contents License (DbCL) 1.0
+  https://opendatacommons.org/licenses/dbcl/1-0/
+
+Changes made: records without an ingredient list were removed; the
+retained columns are code, product_name, brands, countries_en,
+ingredients_text and last_modified; whitespace was collapsed and
+duplicate barcodes dropped. No product images are included.
+
+This file is published to satisfy the ODbL share-alike obligation for
+the Derivative Database embedded in the Annexa iOS app. It contains no
+CosIng data; the EU regulatory data shipped alongside it is CC BY 4.0
+and is distributed as a separate file.
