@@ -12,20 +12,24 @@
   a { color: #0a7ea4; }
   table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
   th, td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid rgba(128,128,128,.3); }
+  h3 { font-size: 1.02rem; margin-bottom: .25rem; }
+  h4 { font-size: .95rem; margin: 1.1rem 0 .25rem; }
   footer { margin-top: 3rem; font-size: .875rem; opacity: .65; }
 </style>
 <title>Privacy Policy — Mert Çetin apps</title>
 <h1>Privacy Policy</h1>
-<p class="sub">Applies to every app published by Mert Çetin. Last updated 6 August 2026.</p>
+<p class="sub">Applies to every app published by Mert Çetin. Last updated 26 October 2026.</p>
 
 <h2>The short version</h2>
-<p>These apps have no accounts and no servers of their own. What you do in them
-stays on your device. The only personal data that leaves your phone is what
-Google's advertising SDK collects in the apps that show ads, and that is listed
-below.</p>
+<p>Most of these apps have no accounts and no servers of their own. What you do in
+them stays on your device. The personal data that leaves your phone is what
+Google's advertising SDK collects in the apps that show ads, listed below, and
+what <a href="#deprem">Deprem Uyarı Sistemi: Anlık</a> sends to its own server
+so it can notify you while the app is closed, described in its own section.</p>
 
 <h2>What stays on the device</h2>
-<p>Location, saved items, settings, history, photos, audio recordings and
+<p>Except where an app's own section says otherwise, location, saved items,
+settings, history, photos, audio recordings and
 sensor readings are held on the device and are not uploaded. Apps that use
 location do so to sort or filter content locally. Apps that record audio or use
 the camera process it on the device unless their own screens say otherwise.
@@ -35,6 +39,114 @@ Deleting the app deletes this data.</p>
 <p>Some apps fetch public data files — for example Sea Temperature downloads a
 daily temperature feed. These are plain file requests. Nothing about you is
 sent with them beyond what any web request carries.</p>
+
+<h2 id="deprem">Deprem Uyarı Sistemi: Anlık</h2>
+
+<section lang="tr">
+<h3>Türkçe</h3>
+<p>Bu uygulama bu sayfadaki genel kuralın <b>istisnasıdır</b>: uygulama kapalıyken size
+özel bildirim gönderebilmek için kendi sunucumuza az miktarda veri gönderir.
+Hesap yoktur, reklam yoktur, analiz ya da çökme raporlama aracı yoktur.</p>
+
+<h4>Sunucuya ne gider</h4>
+<table>
+  <tr><th>Veri</th><th>Ne için</th></tr>
+  <tr><td>Konum, <b>iki ondalığa yuvarlanmış</b> (≈ 1,1 km): bildirimlerin hesaplandığı tek bir nokta (cihazın konumu ya da seçtiğiniz şehir)</td>
+      <td>Depremin size uzaklığını ve konumunuzda beklenen sarsıntı şiddetini hesaplamak, bildirimi size özel göndermek.</td></tr>
+  <tr><td>Apple bildirim servisi (APNs) cihaz belirteci</td>
+      <td>Bildirimi bu cihaza iletmek.</td></tr>
+  <tr><td>Bildirim tercihleri: şiddet eşiği, Türkiye geneli eşiği, sessiz saatler ve saat dilimi, dil, bildirim sesi</td>
+      <td>Tercihinize göre göndermek, sessiz saatlerde ertelemek.</td></tr>
+  <tr><td>Satın alma durumu: deneme / abonelik / ömür boyu, bitiş tarihi ve Apple'ın verdiği <i>originalTransactionId</i> (işlem kimliği)</td>
+      <td>Bildirim hakkınızı doğrulamak; iptal ve iadeyi Apple'ın bildirimiyle işlemek. Kart bilginiz ve Apple Kimliğiniz bize ulaşmaz.</td></tr>
+  <tr><td>Kurulum başına gizli bir değerin <b>özeti</b> (SHA-256)</td>
+      <td>Kaydınıza yalnızca sizin cihazınızın erişebilmesini sağlamak; cihaz belirteci değiştiğinde (yeni telefon, yedekten geri yükleme) kaydınızı size taşımak ve başkasının devralmasını önlemek. Değerin kendisi saklanmaz; uygulamayı silince kaybolur; kurulumlar arasında sizi izlemez.</td></tr>
+  <tr><td>Kayıt ve son görülme zamanı, deneme başlangıç/bitişi, hangi depremin size ne zaman bildirildiği</td>
+      <td>Aynı bildirimi iki kez göndermemek, bildirim sıklığını sınırlamak, deneme uyarılarını bir kez göndermek.</td></tr>
+  <tr><td>Sunucu erişim günlüğü: zaman, istenen adres (cihaz belirteci maskelenir) ve yanıt kodu. <b>IP adresi ve istek başlıkları günlüğe yazılmaz.</b></td>
+      <td>Arıza teşhisi. Sınırlı boyutlu, dönen dosyalarda tutulur.</td></tr>
+  <tr><td>Sahte kayıtları sınırlamak için IP adresinden türetilmiş sayaç</td>
+      <td>Bir adresten gelen yeni kayıt sayısını sınırlamak. Sayaç yalnızca bellekte tutulur, adres günlük değişen bir tuzla özetlenir; diske ve günlüğe yazılmaz, sunucu yeniden başlayınca silinir.</td></tr>
+</table>
+
+<h4>Göndermediklerimiz</h4>
+<p>Ad, e-posta, telefon, hesap, reklam kimliği (IDFA), tam koordinat, hareket geçmişi,
+rehber, fotoğraf. Konum arka planda izlenmez; yalnızca uygulama açıkken, siz
+bastığınızda bir kez okunur.</p>
+
+<h4>Ne kadar süre, nasıl silinir</h4>
+<ul>
+  <li>Cihaz <b>90 gün</b> hiç görünmezse kaydı silinir. Apple belirteci geçersiz saydığında (uygulama silindiğinde) kayıt hemen silinir.</li>
+  <li><b>Ayarlar › Verilerimi sil</b>: sunucudaki kaydınız ve bu cihaza ait gönderim kayıtları gerçekten silinir, işaretlenmez. Deneme süreniz sıfırlanır; aktif bir abonelik iptal olmaz, <i>Satın alımları geri yükle</i> ile geri gelir.</li>
+  <li>Sunucu yedeklerinde silinen kayıt, yedek döngüsü dolana kadar, en fazla 30 gün kalabilir. Erişim günlüğü satırları dönen dosyalarla kendiliğinden silinir.</li>
+</ul>
+
+<h4>Kimlerle paylaşılır</h4>
+<p>Reklam, analiz ya da veri aracısı gibi hiçbir üçüncü tarafla veri paylaşmıyor, veri satmıyoruz.
+Teknik olarak iki altyapıya dayanıyoruz: Apple (bildirim iletimi ve satın alma doğrulaması) ve
+sunucumuzun çalıştığı bulut barındırma hizmeti (Amazon Web Services, Seul bölgesi, Güney Kore).
+Deprem listesi ve harita için telefonunuz AFAD, EMSC ve USGS'nin açık veri sunucularına ve
+Apple Haritalar'a doğrudan bağlanır; bu isteklerle IP adresiniz o hizmetlere ulaşır, konumunuz ulaşmaz.</p>
+
+<h4>Haklarınız</h4>
+<p>Silme uygulamanın içinden yapılır. Erişim, düzeltme ya da silme talebi için
+<a href="mailto:mrtctns22@gmail.com">mrtctns22@gmail.com</a>; kaydı bulabilmemiz için cihaz
+belirteciniz gerektiğinden en kolayı uygulamadaki <i>Verilerimi sil</i> düğmesidir. Türkiye'de 6698
+sayılı KVKK kapsamındaki haklarınız için de aynı adrese yazabilirsiniz. Veri sorumlusu: Mert Çetin.</p>
+</section>
+
+<section lang="en">
+<h3>English</h3>
+<p>This app is the <b>exception</b> to the general rule on this page: to send you a personal
+notification while the app is closed, it sends a small amount of data to our own server.
+There is no account, no advertising, and no analytics or crash-reporting tool.</p>
+
+<h4>What goes to the server</h4>
+<table>
+  <tr><th>Data</th><th>What for</th></tr>
+  <tr><td>Location, <b>rounded to two decimals</b> (≈ 1.1 km): the single point alerts are worked out for (the device's location or the city you pick)</td>
+      <td>Working out how far an earthquake is from you and the shaking expected at your location, and sending the alert to you personally.</td></tr>
+  <tr><td>The Apple Push Notification service (APNs) device token</td>
+      <td>Delivering the notification to this device.</td></tr>
+  <tr><td>Alert preferences: intensity threshold, Turkey-wide threshold, quiet hours and time zone, language, alert sound</td>
+      <td>Sending according to your choices and holding alerts back during quiet hours.</td></tr>
+  <tr><td>Purchase status: trial / subscription / lifetime, expiry date, and the <i>originalTransactionId</i> Apple assigns to the purchase</td>
+      <td>Checking your right to alerts and processing cancellations and refunds from Apple's server notifications. Your card details and Apple Account never reach us.</td></tr>
+  <tr><td>A <b>hash</b> (SHA-256) of a secret generated per installation</td>
+      <td>Making sure only your device can reach your record; moving your record to you when the device token changes (new phone, restore from backup) and stopping anyone else from taking it over. The secret itself is not stored, disappears when you delete the app, and does not follow you across installations.</td></tr>
+  <tr><td>Registration and last-seen times, trial start/end, which earthquake was notified to you and when</td>
+      <td>Not sending the same alert twice, limiting alert frequency, sending each trial reminder once.</td></tr>
+  <tr><td>Server access log: time, requested address (the device token is masked) and response code. <b>IP addresses and request headers are not written to the log.</b></td>
+      <td>Diagnosing faults. Kept in size-limited rotating files.</td></tr>
+  <tr><td>A counter derived from the IP address, to limit fake registrations</td>
+      <td>Limiting how many new registrations come from one address. The counter lives in memory only, the address is hashed with a salt that changes daily; it is not written to disk or to the log and is wiped when the server restarts.</td></tr>
+</table>
+
+<h4>What we do not send</h4>
+<p>Name, email, phone, account, advertising identifier (IDFA), exact coordinates, movement history,
+contacts, photos. Location is not tracked in the background; it is read once, only while the
+app is open and when you tap.</p>
+
+<h4>How long, and how to delete it</h4>
+<ul>
+  <li>If a device is not seen for <b>90 days</b> its record is deleted. When Apple reports the token invalid (the app was deleted) the record is deleted straight away.</li>
+  <li><b>Settings › Delete my data</b>: your record on the server and the delivery records for this device are genuinely deleted, not flagged. Your trial resets; an active subscription is not canceled and comes back with <i>Restore purchases</i>.</li>
+  <li>In server backups a deleted record can remain until the backup cycle completes, for at most 30 days. Access-log lines disappear with the rotating files.</li>
+</ul>
+
+<h4>Who it is shared with</h4>
+<p>We share data with no advertising, analytics or data-broker third party, and we sell none.
+Technically we rely on two infrastructures: Apple (notification delivery and purchase verification)
+and the cloud hosting service our server runs on (Amazon Web Services, Seoul region, South Korea).
+For the earthquake list and map your phone connects directly to the open data servers of AFAD,
+EMSC and USGS and to Apple Maps; those requests carry your IP address to those services, not your location.</p>
+
+<h4>Your rights</h4>
+<p>Deletion is done inside the app. For access, correction or deletion requests write to
+<a href="mailto:mrtctns22@gmail.com">mrtctns22@gmail.com</a>; we need your device token to find
+the record, so the <i>Delete my data</i> button is the easiest route. For rights under Turkey's
+Law No. 6698 (KVKK) you can write to the same address. Data controller: Mert Çetin.</p>
+</section>
 
 <h2>Advertising</h2>
 <p>Apps that show ads use Google AdMob. Where an app does not ask for App
@@ -53,16 +165,20 @@ policy</a>. Each app's App Store listing shows exactly what it collects under
 <h2>Purchases</h2>
 <p>Subscriptions and in-app purchases are processed by Apple. Apple tells the
 app whether a purchase is active; it does not share your payment details, and
-we never see them.</p>
+we never see them. The one exception to "Apple tells the app" is
+<a href="#deprem">Deprem Uyarı Sistemi: Anlık</a>, whose server also verifies the
+purchase with Apple; what it keeps is listed in its section.</p>
 
 <h2>Children</h2>
 <p>These apps are not directed at children under 13 and do not knowingly
 collect data from them.</p>
 
 <h2>Your rights</h2>
-<p>Because there is no account and no server holding your data, there is
+<p>For apps with no account and no server holding your data, there is
 nothing for us to export or delete on request — removing the app removes it.
-For advertising data held by Google, use Google's own controls. Questions:
+For <a href="#deprem">Deprem Uyarı Sistemi: Anlık</a>, delete your server record
+in the app (Settings › Delete my data) or write to us. For advertising data
+held by Google, use Google's own controls. Questions:
 <a href="mailto:mrtctns22@gmail.com">mrtctns22@gmail.com</a>.</p>
 
 <h2>Changes</h2>
