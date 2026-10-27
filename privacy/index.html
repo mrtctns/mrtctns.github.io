@@ -18,14 +18,15 @@
 </style>
 <title>Privacy Policy — Mert Çetin apps</title>
 <h1>Privacy Policy</h1>
-<p class="sub">Applies to every app published by Mert Çetin. Last updated 26 October 2026.</p>
+<p class="sub">Applies to every app published by Mert Çetin. Last updated 27 October 2026.</p>
 
 <h2>The short version</h2>
 <p>Most of these apps have no accounts and no servers of their own. What you do in
 them stays on your device. The personal data that leaves your phone is what
 Google's advertising SDK collects in the apps that show ads, listed below, and
-what <a href="#deprem">Deprem Uyarı Sistemi: Anlık</a> sends to its own server
-so it can notify you while the app is closed, described in its own section.</p>
+what <a href="#deprem">Deprem Uyarı Sistemi: Anlık</a> and
+<a href="#musician">AI Song Generator: Musician</a> send to their own servers,
+each described in its own section below.</p>
 
 <h2>What stays on the device</h2>
 <p>Except where an app's own section says otherwise, location, saved items,
@@ -39,6 +40,83 @@ Deleting the app deletes this data.</p>
 <p>Some apps fetch public data files — for example Sea Temperature downloads a
 daily temperature feed. These are plain file requests. Nothing about you is
 sent with them beyond what any web request carries.</p>
+
+<h2 id="musician">AI Song Generator: Musician</h2>
+
+<section lang="tr">
+<h3>Türkçe</h3>
+<p>Bu uygulama da genel kuralın <b>istisnasıdır</b>: şarkıyı üreten yapay zekâ
+modeli telefonda değil, bizim sunucumuzun arkasındaki bir servistedir. Hesap
+yoktur, reklam yoktur, analiz ya da çökme raporlama aracı yoktur.</p>
+
+<h4>Sunucuya ne gider</h4>
+<table>
+  <tr><th>Veri</th><th>Niçin</th></tr>
+  <tr><td>Yazdığınız tarif veya şarkı sözü, seçtiğiniz tür, enstrüman ve uzunluk</td>
+      <td>Şarkıyı üretmek. Bu metin üretim sağlayıcımıza (Suno, ABD) iletilir.
+      <b>Sunucumuz metni saklamaz</b>; iş bittiğinde yalnız üretilen parçanın adresi ve başlığı kalır.</td></tr>
+  <tr><td>Cihaz doğrulama anahtarı (Apple App Attest <code>keyId</code>)</td>
+      <td>İsteğin gerçekten bizim imzalı uygulamamızdan geldiğini doğrulamak. Reklam kimliği (IDFA/IDFV) kullanılmaz.</td></tr>
+  <tr><td>Bildirim belirteci (yalnız izin verdiyseniz)</td>
+      <td>Şarkınız siz uygulamayı kapattıktan sonra bittiğinde haber vermek.</td></tr>
+  <tr><td>Abonelik işlem kimliği (<code>originalTransactionId</code>)</td>
+      <td>Aboneliğinizi doğrulamak. Kart bilgileriniz ve Apple Hesabınız bize hiç ulaşmaz.</td></tr>
+  <tr><td>Dil tercihi</td><td>Hata ve bildirim metinlerini kendi dilinizde göndermek.</td></tr>
+</table>
+
+<h4>Ne gitmez</h4>
+<p>Konum, rehber, fotoğraf, mikrofon kaydı ve reklam kimliği gönderilmez.
+Ürettiğiniz şarkının ses dosyası sunucumuzda durmaz; telefonunuza indirilir.
+Söz videosu tamamen telefonunuzda üretilir ve bunun için sunucuya hiçbir istek gitmez.</p>
+
+<h4>Kimlerle paylaşılır</h4>
+<p>Veri satmıyor, reklam ve analiz araçlarıyla paylaşmıyoruz. Üç altyapıya dayanıyoruz:
+Apple (bildirim iletimi, cihaz doğrulama ve satın alma doğrulaması),
+üretim sağlayıcımız <b>Suno (sunoapi.org, ABD)</b> — yazdığınız metin oraya iletilir ve
+üretilen parçayı yaklaşık iki hafta saklar — ve sunucumuzun barındırıldığı veri merkezi (DeHost, Türkiye).</p>
+
+<h4>Haklarınız</h4>
+<p>Uygulamayı silmek cihaz doğrulama anahtarınızı geçersiz kılar. Erişim, düzeltme ya da
+silme talebi için aşağıdaki adrese yazabilirsiniz.</p>
+</section>
+
+<section lang="en">
+<h3>English</h3>
+<p>This app is also an <b>exception</b> to the general rule above: the model that
+makes the song runs behind our own server, not on the phone. There are no
+accounts, no ads, and no analytics or crash reporting.</p>
+
+<h4>What goes to the server</h4>
+<table>
+  <tr><th>Data</th><th>Why</th></tr>
+  <tr><td>The description or lyrics you type, and the genre, instruments and length you pick</td>
+      <td>To make the song. This text is passed to our generation provider (Suno, USA).
+      <b>Our server does not store it</b>; once the job finishes only the track's address and title remain.</td></tr>
+  <tr><td>Device attestation key (Apple App Attest <code>keyId</code>)</td>
+      <td>To check the request really comes from our signed app. No advertising identifier (IDFA/IDFV) is used.</td></tr>
+  <tr><td>Notification token (only if you allowed notifications)</td>
+      <td>To tell you when your song is ready after you close the app.</td></tr>
+  <tr><td>Subscription transaction id (<code>originalTransactionId</code>)</td>
+      <td>To verify your subscription. Your card details and Apple Account never reach us.</td></tr>
+  <tr><td>Language preference</td><td>To send error and notification text in your own language.</td></tr>
+</table>
+
+<h4>What does not go</h4>
+<p>Location, contacts, photos, microphone recordings and advertising identifiers are not sent.
+The audio file of your song is not kept on our server; it is downloaded to your phone.
+The lyric video is rendered entirely on your phone and makes no request to the server at all.</p>
+
+<h4>Who it is shared with</h4>
+<p>We do not sell data and do not share it with ad networks or analytics tools. We rely on three
+providers: Apple (notification delivery, device attestation and purchase verification),
+our generation provider <b>Suno (sunoapi.org, USA)</b> — the text you write is passed to them and
+they keep the generated track for about two weeks — and the data centre our server is hosted in
+(DeHost, Turkey).</p>
+
+<h4>Your rights</h4>
+<p>Deleting the app invalidates your device attestation key. For access, correction or deletion
+requests, write to the address below.</p>
+</section>
 
 <h2 id="deprem">Deprem Uyarı Sistemi: Anlık</h2>
 
@@ -84,7 +162,7 @@ bastığınızda bir kez okunur.</p>
 <h4>Kimlerle paylaşılır</h4>
 <p>Reklam, analiz ya da veri aracısı gibi hiçbir üçüncü tarafla veri paylaşmıyor, veri satmıyoruz.
 Teknik olarak iki altyapıya dayanıyoruz: Apple (bildirim iletimi ve satın alma doğrulaması) ve
-sunucumuzun çalıştığı bulut barındırma hizmeti (Amazon Web Services, Seul bölgesi, Güney Kore).
+sunucumuzun barındırıldığı veri merkezi (DeHost, Türkiye).
 Deprem listesi ve harita için telefonunuz AFAD, EMSC ve USGS'nin açık veri sunucularına ve
 Apple Haritalar'a doğrudan bağlanır; bu isteklerle IP adresiniz o hizmetlere ulaşır, konumunuz ulaşmaz.</p>
 
@@ -137,7 +215,7 @@ app is open and when you tap.</p>
 <h4>Who it is shared with</h4>
 <p>We share data with no advertising, analytics or data-broker third party, and we sell none.
 Technically we rely on two infrastructures: Apple (notification delivery and purchase verification)
-and the cloud hosting service our server runs on (Amazon Web Services, Seoul region, South Korea).
+and the data centre our server is hosted in (DeHost, Turkey).
 For the earthquake list and map your phone connects directly to the open data servers of AFAD,
 EMSC and USGS and to Apple Maps; those requests carry your IP address to those services, not your location.</p>
 
